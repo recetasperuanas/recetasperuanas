@@ -74,105 +74,46 @@ section#first-scroll.hasMenu {	padding-top: 150px;
     transform: translateY(4px);
   }
 }
-
 </style>
+<style>
+  .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-<div class="boxShadowVideo" itemprop="video" itemscope="" itemtype="https://schema.org/VideoObject"><img src="./recetas/ribbons50off.png" alt="Oferta Peluquería para Perros" width="134" height="129" itemprop="image"><lite-vimeo videoid="754755494" itemprop="embedUrl" content="https://vimeo.com/754755494" title="Play: Video"><template shadowrootmode="open">
-      <style>
-        :host {
-          contain: content;
-          display: block;
-          position: relative;
-          width: 100%;
-          padding-bottom: calc(100% / (16 / 9));
-        }
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+</style>
+<div class="boxShadowVideo" itemprop="video" itemscope="" ><img src="./img/descuento.png" alt="Descuento del 50% en el libro" width="134" height="129" itemprop="image">
+  <div class="video-responsive">
+  <iframe
+    src="https://player.vimeo.com/video/754755494"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+    title="Video de ejemplo"
+  ></iframe>
+</div>
+  </div>
+  <div class="optesumVid"><div><p>Ya somos más de </p><p>2583</p><p>Clientes Satisfechos </p></div><p><u style="color: #FFD700;">¡SOLO FALTAS TU!</u></p></div><img src="./recetas/peluqueria-para-perros-ico.svg" class="icon" alt="tijeras grooming Peluquería para Perros" width="82" height="82"><img src="./recetas/peluqueria-para-perros-ico.svg" class="icon last" alt="tijeras grooming Peluquería para Perros" width="82" height="82">
+</div>
+</section>
 
-        #frame, #fallbackPlaceholder, iframe {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-		  left: 0;
-        }
+<!--TEXTO-->
 
-        #frame {
-          cursor: pointer;
-        }
-
-        #fallbackPlaceholder {
-          object-fit: cover;
-        }
-
-        #frame::before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
-          background-position: top;
-          background-repeat: repeat-x;
-          height: 60px;
-          padding-bottom: 50px;
-          width: 100%;
-          transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-          z-index: 1;
-        }
-        /* play button */
-        .lvo-playbtn {
-          width: 70px;
-          height: 46px;
-          background-color: #212121;
-          z-index: 1;
-          opacity: 0.8;
-          border-radius: 10%;
-          transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-          border: 0;
-		  cursor:pointer;
-        }
-        #frame:hover .lvo-playbtn {
-          background-color: rgb(239 80 48);
-          opacity: 1;
-		  cursor:pointer;
-        }
-        /* play button triangle */
-        .lvo-playbtn:before {
-          content: '';
-          border-style: solid;
-          border-width: 11px 0 11px 19px;
-          border-color: transparent transparent transparent #fff;
-		  cursor:pointer;
-        }
-        .lvo-playbtn,
-        .lvo-playbtn:before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0);
-		  cursor:pointer;
-        }
-
-        /* Post-click styles */
-        .lvo-activated {
-          cursor: unset;
-        }
-
-        #frame.lvo-activated::before,
-        .lvo-activated .lvo-playbtn {
-          display: none;
-        }
-      </style>
-      <div id="frame">
-        <picture>
-          <source id="webpPlaceholder" type="image/webp" srcset="https://i.vimeocdn.com/video/1516491053-31f4fa281fa2bde5a391ad09335767af6ddf5729bf178d37f4e6e7164395f
-          f-d.webp?mw=1100&amp;mh=619&amp;q=70">
-          <source id="jpegPlaceholder" type="image/jpeg" srcset="https://i.vimeocdn.com/video/1516491053-31f4fa281fa2bde5a391ad09335767af6ddf5729bf178d37f4e6e7164395f83f-d.jpg?mw=1100&amp;mh=619&amp;q=70">
-          <img id="fallbackPlaceholder" referrerpolicy="origin" src="https://i.vimeocdn.com/video/1516491053-31f4fa281fa2bde5a391ad09335767af6ddf5729bf178d37f4e6e7164395f83f-d.jpg?mw=1100&amp;mh=619&amp;q=70" aria-label="Play: Video" alt="Play: Video">
-        </picture>
-        <button class="lvo-playbtn" style="cursor:pointer" aria-label="Play: Video"></button>
-      </div>
-    </template></lite-vimeo><meta itemprop="name" content="Video Principal del Curso de Peluquería para Perros">
-    <meta itemprop="description" content="Video donde Fabio Gomez Sepulveda te explica todo sobre el curso de Peluquería para Perros.">
-    <meta itemprop="thumbnailUrl" content="https://vumbnail.com/754755494.jpg">
-  </div><div class="optesumVid"><div><p>Ya somos más de </p><p>2583</p><p>Clientes Satisfechos </p></div><p><u style="color: #FFD700;">¡SOLO FALTAS TU!</u></p></div><img src="./recetas/peluqueria-para-perros-ico.svg" class="icon" alt="tijeras grooming Peluquería para Perros" width="82" height="82"><img src="./recetas/peluqueria-para-perros-ico.svg" class="icon last" alt="tijeras grooming Peluquería para Perros" width="82" height="82"></div></section><div id="preloader" style="position: fixed; inset: 0px; z-index: 2147483647; opacity: 0; background-color: rgb(245, 243, 238); display: none;"><div class="spinner"><div class="bounce1"></div></div></div>
+  <div id="preloader" style="position: fixed; inset: 0px; z-index: 2147483647; opacity: 0; background-color: rgb(245, 243, 238); display: none;"><div class="spinner"><div class="bounce1"></div></div></div>
   <section class="bajada principal padding" aria-labelledby="sub-header-title" itemscope="" itemtype="https://schema.org/EducationalOccupationalProgram">
     <div class="sub-header">
     <h2 id="sub-header-title" itemprop="name">
@@ -588,7 +529,7 @@ section#first-scroll.hasMenu {	padding-top: 150px;
 </section>
  </div>
   </section>
-  <section id="video-por-dentro" aria-labelledby="video-por-dentro-heading" itemscope="" itemtype="https://schema.org/VideoObject"><div class="back768" style="margin-top: -60px;"> <div class="text-center section-heading"><h2 id="video-por-dentro-heading" itemprop="name" style="font-family: 'Fredoka', sans-serif">¿Quieres dar un vistazo?</h2><p itemprop="description">Mira con atención el siguiente video donde Giancarlo <b>te explica como es el libro por dentro</b>.</p></div> <div class="boxShadowVideo" itemprop="video"><lite-vimeo videoid="754755367" title="Play: Video"><template shadowrootmode="open">
+  <section id="video-por-dentro" aria-labelledby="video-por-dentro-heading" itemscope="" ><div class="back768" style="margin-top: -60px;"> <div class="text-center section-heading"><h2 id="video-por-dentro-heading" itemprop="name" style="font-family: 'Fredoka', sans-serif">¿Quieres dar un vistazo?</h2><p itemprop="description">Mira con atención el siguiente video donde Giancarlo <b>te explica como es el libro por dentro</b>.</p></div> <div class="boxShadowVideo" itemprop="video"><lite-vimeo videoid="754755367" title="Play: Video"><template shadowrootmode="open">
       <style>
         :host {
           contain: content;
@@ -672,12 +613,13 @@ section#first-scroll.hasMenu {	padding-top: 150px;
         }
       </style>
       <div id="frame">
-        <picture>
-          <source id="webpPlaceholder" type="image/webp" srcset="https://i.vimeocdn.com/video/1519810427-cac6a43d0e5189ff563d0b758a92d5a71a3a1bdff310cd355cb29ea2fef60b60-d.webp?mw=1100&amp;mh=619&amp;q=70">
-          <source id="jpegPlaceholder" type="image/jpeg" srcset="https://i.vimeocdn.com/video/1519810427-cac6a43d0e5189ff563d0b758a92d5a71a3a1bdff310cd355cb29ea2fef60b60-d.jpg?mw=1100&amp;mh=619&amp;q=70">
-          <img id="fallbackPlaceholder" referrerpolicy="origin" src="https://i.vimeocdn.com/video/1519810427-cac6a43d0e5189ff563d0b758a92d5a71a3a1bdff310cd355cb29ea2fef60b60-d.jpg?mw=1100&amp;mh=619&amp;q=70" aria-label="Play: Video" alt="Play: Video">
-        </picture>
-        <button class="lvo-playbtn" style="cursor:pointer" aria-label="Play: Video"></button>
+    <iframe
+    src="https://player.vimeo.com/video/754755494"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+    title="Video de ejemplo"
+  ></iframe>
       </div>
     </template></lite-vimeo></div> </div></section><section class="callToAction bgWhite" itemscope="" itemtype="https://schema.org/CallToAction"> 
       <meta itemprop="target" content="#precio"> <meta itemprop="actionPlatform" content="https://petzschool.com"> 
@@ -814,101 +756,8 @@ section#first-scroll.hasMenu {	padding-top: 150px;
   </div>
 </section>
 
-  <section id="video-adicional" style="margin-top: -90px;" class="bgYellow bg-pattern" aria-labelledby="video-adicional-heading" itemscope="" itemtype="https://schema.org/VideoObject"><div class="back768"> <div class="text-center section-heading"><h2 id="video-adicional-heading" itemprop="name" style="font-family: 'Fredoka', sans-serif">Fabio responde</h2><p itemprop="description"><b>¿Se puede hacer un curso de peluquería para perros online?</b></p></div> <div class="boxShadowVideo" itemprop="video"><lite-vimeo videoid="754755452" title="Play: Video"><template shadowrootmode="open">
-      <style>
-        :host {
-          contain: content;
-          display: block;
-          position: relative;
-          width: 100%;
-          padding-bottom: calc(100% / (16 / 9));
-        }
-
-        #frame, #fallbackPlaceholder, iframe {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-		  left: 0;
-        }
-
-        #frame {
-          cursor: pointer;
-        }
-
-        #fallbackPlaceholder {
-          object-fit: cover;
-        }
-
-        #frame::before {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
-          background-position: top;
-          background-repeat: repeat-x;
-          height: 60px;
-          padding-bottom: 50px;
-          width: 100%;
-          transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-          z-index: 1;
-        }
-        /* play button */
-        .lvo-playbtn {
-          width: 70px;
-          height: 46px;
-          background-color: #212121;
-          z-index: 1;
-          opacity: 0.8;
-          border-radius: 10%;
-          transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-          border: 0;
-		  cursor:pointer;
-        }
-        #frame:hover .lvo-playbtn {
-          background-color: rgb(239 80 48);
-          opacity: 1;
-		  cursor:pointer;
-        }
-        /* play button triangle */
-        .lvo-playbtn:before {
-          content: '';
-          border-style: solid;
-          border-width: 11px 0 11px 19px;
-          border-color: transparent transparent transparent #fff;
-		  cursor:pointer;
-        }
-        .lvo-playbtn,
-        .lvo-playbtn:before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate3d(-50%, -50%, 0);
-		  cursor:pointer;
-        }
-
-        /* Post-click styles */
-        .lvo-activated {
-          cursor: unset;
-        }
-
-        #frame.lvo-activated::before,
-        .lvo-activated .lvo-playbtn {
-          display: none;
-        }
-      </style>
-      <div id="frame">
-        <picture>
-          <source id="webpPlaceholder" type="image/webp" srcset="https://i.vimeocdn.com/video/1516493100-ea8afcb417e2a2ffa053e0ecb0c6c560b0c624289d512902a22841dc7d1d33c6-d.webp?mw=1100&amp;mh=619&amp;q=70">
-          <source id="jpegPlaceholder" type="image/jpeg" srcset="https://i.vimeocdn.com/video/1516493100-ea8afcb417e2a2ffa053e0ecb0c6c560b0c624289d512902a22841dc7d1d33c6-d.jpg?mw=1100&amp;mh=619&amp;q=70">
-          <img id="fallbackPlaceholder" referrerpolicy="origin" src="https://i.vimeocdn.com/video/1516493100-ea8afcb417e2a2ffa053e0ecb0c6c560b0c624289d512902a22841dc7d1d33c6-d.jpg?mw=1100&amp;mh=619&amp;q=70" aria-label="Play: Video" alt="Play: Video">
-        </picture>
-        <button class="lvo-playbtn" style="cursor:pointer" aria-label="Play: Video"></button>
-      </div>
-    </template></lite-vimeo></div> </div></section>
-    <section id="header-beneficios" aria-labelledby="header-beneficios-heading" itemscope="" itemtype="https://schema.org/Offer">
+    <section style="margin-top: -70px;" id="header-beneficios" aria-labelledby="header-beneficios-heading" itemscope="" itemtype="https://schema.org/Offer">
        <h2 id="header-beneficios-heading" class="visually-hidden">Beneficios Adicionales</h2> <p itemprop="name"> <u>SIEMPRE</u> te daremos más y más valor para <span class="blockMobile"><u>SUPERAR</u> tus expectativas, <u>POR ESO</u>...</span> </p> <p itemprop="description" style="font-family: 'Fredoka', sans-serif"> Además recibirás estos beneficios </p></section>
-       
  <style>
  .benefits-section {
   display: flex;
