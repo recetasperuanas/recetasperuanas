@@ -214,10 +214,26 @@ section#first-scroll.hasMenu {	padding-top: 150px;
     </div>
   </section>
 <br/>
+<style>
+  .libro-img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    .libro-img {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+</style>
   <!--LIBRO PORTADA-->
-  <section class="bajada principal padding">
-     <img src="recetas/libro.png" class="lazyload" width="600px" height="200px" itemprop="image">
-  </section>
+ <section class="bajada principal padding">
+  <img src="recetas/libro.png" class="libro-img lazyload" itemprop="image" alt="Libro de recetas">
+</section>
  
   <!---FIN LIBRO PORTADA-->
      <div class="container">
