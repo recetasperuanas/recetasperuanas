@@ -1199,17 +1199,39 @@ src="https://www.facebook.com/tr?id=1238336137607545&ev=PageView&noscript=1"
   updateTimer();
 </script>
 <!-- WSP flotante -->
-<a href="https://wa.me/51943085507?text=¡Hola! Vi el libro que estás promocionando y me interesa. ¿Está disponible todavía?" class="wsp-btn" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
-</a>
+<!-- WSP inicio -->
+<div class="wsp-container">
+  <span class="wsp-text">¿Tienes dudas? <strong>¡Escríbenos!</strong></span>
+  <a href="https://wa.me/51943085507?text=¡Hola! Vi el libro que estás promocionando y me interesa. ¿Está disponible todavía?" class="wsp-btn" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+  </a>
+</div>
+
 <style>
-  .wsp-btn {
+  .wsp-container {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+  }
+
+  .wsp-text {
+    background-color: #25D366;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    animation: fadeInRight 0.5s ease;
+  }
+
+  .wsp-btn {
     width: 58px;
     height: 58px;
-    z-index: 9999;
     background-color: #25D366;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -1227,6 +1249,17 @@ src="https://www.facebook.com/tr?id=1238336137607545&ev=PageView&noscript=1"
     width: 28px;
     height: 28px;
     filter: brightness(0) invert(1);
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 </style>
 <!-- WSP fin -->
